@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pee Buddy</string>
+    <string name="login_label">Log In</string>
+    <string name="login_to_facebook">Login to Facebook</string>
+    <string name="login_to_google">Login to Google</string>
+    <string name="welcome">Welcome!</string>
+    <string name="please_login">Please login to find your spot!</string>
+    <string name="or">or</string>
+    <string name="login_email">Login with Email</string>
+    <string name="signup_email">Sign Up with Email</string>
+    <string name="username_hint">eye@havetopee.com</string>
+    <string name="password_hint">********</string>
+    <string name="signup_label">Sign Up</string>
+
+
+</resources>

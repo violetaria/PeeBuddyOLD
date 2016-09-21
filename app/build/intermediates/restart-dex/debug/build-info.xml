@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86,armeabi-v7a,armeabi"
+    api-level="23"
+    density="xxhdpi"
+    format="7"
+    timestamp="72451157516639"
+    token="9216731650815056943" >
+
+    <task
+        name="javac"
+        duration="1616" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="59" />
+    <task
+        name="verifier"
+        duration="13" />
+
+    <artifact
+        location="/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
+        type="DEX" />
+
+    <build timestamp="71484213492234" >
+        <artifact
+            location="/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build timestamp="72370425578603" >
+        <artifact
+            location="/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
+            type="DEX" />
+    </build>
+    <build timestamp="72451157516639" >
+        <artifact
+            location="/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
+            type="DEX" />
+    </build>
+
+</instant-run>
