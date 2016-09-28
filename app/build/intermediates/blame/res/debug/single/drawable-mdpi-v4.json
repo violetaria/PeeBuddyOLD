@@ -28,10 +28,6 @@
         "source": "/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
-        "merged": "/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/ic_launcher.png",
-        "source": "/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/src/main/res/drawable-mdpi/ic_launcher.png"
-    },
-    {
         "merged": "/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_015.png",
         "source": "/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
     },
@@ -86,10 +82,6 @@
     {
         "merged": "/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png",
         "source": "/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
-    },
-    {
-        "merged": "/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/fb_login.png",
-        "source": "/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/src/main/res/drawable-mdpi/fb_login.png"
     },
     {
         "merged": "/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_star_black_48dp.png",

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/res/merged/debug/drawable-mdpi/fb_login.png",
+        "source": "/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/src/main/res/drawable-mdpi/fb_login.png"
+    },
+    {
+        "merged": "/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher.png",
+        "source": "/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    }
+]
