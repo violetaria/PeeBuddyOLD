@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    api-level="24"
+    density="560dpi"
+    format="8"
+    plugin-version="2.2.0"
+    timestamp="366385114059845"
+    token="9216731650815056943"
+    verifier="FULL_BUILD_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="1253" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="700" />
+    <task
+        name="verifier"
+        duration="91" />
+
+    <artifact
+        location="/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
+
+    <build
+        timestamp="366385114059845"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

@@ -1,0 +1,7 @@
+#Sun Oct 02 10:24:46 EDT 2016
+base.0=/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7bf090f95ad20f2b78938ab5d5b7054c5781d5dc
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ad8d1fd17b6f935713140766f819c275a685c174/classes.dex
+base.1=/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ad8d1fd17b6f935713140766f819c275a685c174
+file.0=/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7bf090f95ad20f2b78938ab5d5b7054c5781d5dc/classes.dex
