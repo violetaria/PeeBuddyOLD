@@ -1,5 +1,7 @@
 package com.getlosthere.apps.peebuddy.activities;
 
+import static com.getlosthere.apps.peebuddy.R.menu.login;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -8,6 +10,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.codepath.oauth.OAuthLoginActionBarActivity;
+import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
@@ -16,8 +19,10 @@ import com.facebook.login.LoginResult;
 import com.getlosthere.apps.peebuddy.R;
 import com.getlosthere.apps.peebuddy.api_clients.FacebookClient;
 import com.getlosthere.apps.peebuddy.api_clients.PeeBuddyClient;
+import com.getlosthere.apps.peebuddy.applications.RestApplication;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.Arrays;
@@ -26,34 +31,51 @@ import cz.msebera.android.httpclient.Header;
 
 public class LoginActivity extends OAuthLoginActionBarActivity<FacebookClient> {
 	private CallbackManager callbackManager;
-	PeeBuddyClient peeBuddyClient;
+	private PeeBuddyClient peeBuddyClient = RestApplication.getPeeBuddyClient();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
 		callbackManager = CallbackManager.Factory.create();
-		peeBuddyClient = new PeeBuddyClient();
+
+		if(isFacebookLoggedIn()) {
+			onLoginSuccess();
+		}
 
 		LoginManager.getInstance().registerCallback(callbackManager,
 				new FacebookCallback<LoginResult>() {
 					@Override
 					public void onSuccess(LoginResult loginResult) {
 						Toast.makeText(getApplicationContext(),"login succeeded",Toast.LENGTH_LONG).show();
-						Log.d("DEBUG",loginResult.getAccessToken().toString());
 						String fb_token = loginResult.getAccessToken().getToken().toString();
                         String fb_user_id = loginResult.getAccessToken().getUserId().toString();
 						String expires_at = loginResult.getAccessToken().getExpires().toString();
 						peeBuddyClient.createSession(fb_token, fb_user_id, expires_at, new JsonHttpResponseHandler() {
                             @Override
-                            public void onSuccess(int statusCode, Header[] headers,
-                                    JSONObject response) {
-                                super.onSuccess(statusCode, headers, response);
-                            }
+                            public void onSuccess(int statusCode, Header[] headers,JSONObject response) {
+                               Toast.makeText(getApplicationContext(),"WOOHOO",Toast.LENGTH_LONG).show();
+                                Log.d("DEBUG",response.toString());
+								try {
+									peeBuddyClient.addCookie("token",response.getString("token"));
+								} catch (JSONException e) {
+									e.printStackTrace();
+								}
+                                onLoginSuccess();
+							}
 
                             @Override
                             public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
-                                    Log.e("ERROR",errorResponse.toString());
+                                    Log.e("ERROR","Status code = " + statusCode);
+                                    if(errorResponse != null) {
+                                        Log.e("ERROR",errorResponse.toString());
+                                    }
+                            }
+
+                            @Override
+                            public void onFailure(int statusCode, Header[] headers,String responseString, Throwable throwable) {
+                                Log.e("ERROR","Status code = " + statusCode);
+                                Log.e("ERROR",responseString);
                             }
                         });
 					}
@@ -74,7 +96,7 @@ public class LoginActivity extends OAuthLoginActionBarActivity<FacebookClient> {
 	// Inflate the menu; this adds items to the action bar if it is present.
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.login, menu);
+		getMenuInflater().inflate(login, menu);
 		return true;
 	}
 
@@ -88,9 +110,9 @@ public class LoginActivity extends OAuthLoginActionBarActivity<FacebookClient> {
 	// i.e Display application "homepage"
 	@Override
 	public void onLoginSuccess() {
-
-		// Intent i = new Intent(this, PhotosActivity.class);
-		// startActivity(i);
+		Intent i = new Intent(this, MainActivity.class);
+		startActivity(i);
+		finish();
 	}
 
 	// OAuth authentication flow failed, handle the error
@@ -107,4 +129,7 @@ public class LoginActivity extends OAuthLoginActionBarActivity<FacebookClient> {
 		LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("public_profile","email"));
 	}
 
+	public boolean isFacebookLoggedIn(){
+		return AccessToken.getCurrentAccessToken() != null;
+	}
 }

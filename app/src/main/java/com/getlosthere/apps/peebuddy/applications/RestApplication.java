@@ -5,6 +5,7 @@ import android.content.Context;
 import com.facebook.FacebookSdk;
 import com.facebook.appevents.AppEventsLogger;
 import com.getlosthere.apps.peebuddy.api_clients.FacebookClient;
+import com.getlosthere.apps.peebuddy.api_clients.PeeBuddyClient;
 
 /*
  * This is the Android application itself and is used to configure various settings
@@ -17,6 +18,7 @@ import com.getlosthere.apps.peebuddy.api_clients.FacebookClient;
  */
 public class RestApplication extends com.activeandroid.app.Application {
 	private static Context context;
+	private static PeeBuddyClient peeBuddyClient;
 
 	@Override
 	public void onCreate() {
@@ -24,6 +26,7 @@ public class RestApplication extends com.activeandroid.app.Application {
 		RestApplication.context = this;
 		FacebookSdk.sdkInitialize(getApplicationContext());
 		AppEventsLogger.activateApp(this);
+		peeBuddyClient = new PeeBuddyClient();
 	}
 
 	public static Context getContext(){
@@ -32,5 +35,9 @@ public class RestApplication extends com.activeandroid.app.Application {
 
 	public static FacebookClient getFacebookClient() {
 		return (FacebookClient) FacebookClient.getInstance(FacebookClient.class, RestApplication.context);
+	}
+
+	public static PeeBuddyClient getPeeBuddyClient() {
+		return peeBuddyClient;
 	}
 }
