@@ -4,53 +4,33 @@
     density="560dpi"
     format="8"
     plugin-version="2.2.0"
-    timestamp="155375239398871"
+    timestamp="366385114059845"
     token="9216731650815056943"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="540" />
+        duration="1253" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="170" />
+        duration="700" />
     <task
         name="verifier"
-        duration="8" />
+        duration="91" />
 
     <artifact
-        location="/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
-        type="DEX" />
+        location="/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="152220589883540"
+        timestamp="366385114059845"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="153317134180392"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
-    </build>
-    <build
-        timestamp="155375239398871"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
-            type="DEX" />
     </build>
 
 </instant-run>
