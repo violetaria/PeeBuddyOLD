@@ -25,7 +25,7 @@
     },
     {
         "merged": "/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/res/merged/debug/color/com_facebook_send_button_text_color.xml",
-        "source": "/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/res/color/com_facebook_send_button_text_color.xml"
+        "source": "/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.1/res/color/com_facebook_send_button_text_color.xml"
     },
     {
         "merged": "/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
@@ -45,7 +45,7 @@
     },
     {
         "merged": "/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/res/merged/debug/color/com_facebook_button_text_color.xml",
-        "source": "/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/res/color/com_facebook_button_text_color.xml"
+        "source": "/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.1/res/color/com_facebook_button_text_color.xml"
     },
     {
         "merged": "/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",

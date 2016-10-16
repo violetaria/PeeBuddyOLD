@@ -45,3 +45,10 @@ dependencies {
     compile 'com.github.hotchemi:permissionsdispatcher:2.0.7'
     apt 'com.github.hotchemi:permissionsdispatcher-processor:2.0.7'
 }
+
+
+gradle.projectsEvaluated {
+    tasks.withType(JavaCompile) {
+        options.compilerArgs << "-Xlint:deprecation" // << "-Xlint:unchecked" <<
+    }
+}

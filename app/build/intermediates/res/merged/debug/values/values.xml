@@ -377,12 +377,14 @@
     <string name="login_label">Log In</string>
     <string name="login_to_facebook">Login to Facebook</string>
     <string name="login_to_google">Login to Google</string>
+    <string name="logoff">Logoff</string>
     <string name="messenger_send_button_text">Send</string>
     <string name="or">or</string>
     <string name="password_hint">********</string>
     <string name="place_autocomplete_clear_button">Clear search</string>
     <string name="place_autocomplete_search_hint">Search</string>
     <string name="please_login">Please login to find your spot!</string>
+    <string name="rate">Rate</string>
     <string name="signup_email">Sign Up with Email</string>
     <string name="signup_label">Sign Up</string>
     <string name="snippet">snippet</string>

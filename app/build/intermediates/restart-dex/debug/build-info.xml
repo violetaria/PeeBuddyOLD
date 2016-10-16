@@ -1,36 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    api-level="24"
-    density="560dpi"
+    api-level="23"
+    density="xxhdpi"
     format="8"
     plugin-version="2.2.0"
-    timestamp="366385114059845"
+    timestamp="396545731906874"
     token="9216731650815056943"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="FIELD_ADDED" >
 
     <task
         name="javac"
-        duration="1253" />
+        duration="2016" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="700" />
+        duration="27" />
     <task
         name="verifier"
-        duration="91" />
+        duration="16" />
 
     <artifact
-        location="/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
+        location="/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
+        type="DEX" />
 
     <build
-        timestamp="366385114059845"
+        timestamp="396034171313406"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="396545731906874"
+        verifier="FIELD_ADDED" >
+        <artifact
+            location="/Users/violetaria/AndroidStudioProjects/PeeBuddy/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

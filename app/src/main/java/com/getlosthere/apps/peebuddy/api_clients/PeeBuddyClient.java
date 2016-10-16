@@ -12,7 +12,7 @@ import java.util.Map;
 import cz.msebera.android.httpclient.impl.cookie.BasicClientCookie;
 
 public class PeeBuddyClient {
-	private static final String BASE_URL = "https://787b2500.ngrok.io";
+	private static final String BASE_URL = "https://a8bc1a11.ngrok.io/api/v1";
 	private static AsyncHttpClient client = new AsyncHttpClient();
 	private PersistentCookieStore cookieStore = new PersistentCookieStore(RestApplication.getContext());;
 
@@ -24,7 +24,7 @@ public class PeeBuddyClient {
 	public void addCookie(String token, String value){
 		BasicClientCookie newCookie = new BasicClientCookie(token, value);
 		newCookie.setVersion(1);
-		newCookie.setDomain("787b2500.ngrok.io");
+		newCookie.setDomain("c469dba1.ngrok.io");
 		newCookie.setPath("/");
 		cookieStore.addCookie(newCookie);
 	}
@@ -45,7 +45,7 @@ public class PeeBuddyClient {
 		RequestParams params = new RequestParams();
 		params.put("lat",lat);
 		params.put("lng",lng);
-		client.get(getAbsoluteUrl(url), null, responseHandler);
+		client.get(getAbsoluteUrl(url), params, responseHandler);
 	}
 
 	private static String getAbsoluteUrl(String relativeUrl) {
